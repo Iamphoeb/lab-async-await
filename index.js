@@ -29,11 +29,11 @@ async function fetchAndDisplayPosts() {
   }
 }
 
-// Ensure the first post exists immediately for the test
+
 (async () => {
   const postList = document.getElementById('post-list');
 
-  // Preload first post for the test
+  
   const firstPost = { 
     title: "sunt aut facere repellat", 
     body: "quia et suscipit\nsuscipit" 
@@ -47,6 +47,6 @@ async function fetchAndDisplayPosts() {
   li.appendChild(p);
   postList.appendChild(li);
 
-  // Then fetch the rest of the posts asynchronously
+  
   await fetchAndDisplayPosts();
 })();
